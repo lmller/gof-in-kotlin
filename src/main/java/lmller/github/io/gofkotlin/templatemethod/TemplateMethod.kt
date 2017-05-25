@@ -1,6 +1,6 @@
 package lmller.github.io.gofkotlin.templatemethod
 
-fun trackTime(task: () -> Unit) {
+fun execute(task: () -> Unit) {
     val startTime = System.currentTimeMillis()
     task()
     println("Work took ${System.currentTimeMillis() - startTime} millis")
@@ -8,7 +8,7 @@ fun trackTime(task: () -> Unit) {
 
 
 fun main(args: Array<String>) {
-    trackTime {
+    execute {
         println("Working...")
     }
 }
