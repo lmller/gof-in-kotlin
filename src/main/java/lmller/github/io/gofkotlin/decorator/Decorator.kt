@@ -22,12 +22,27 @@ fun Text.background(decorated: Text.() -> Unit) {
     print("\u001B[0m")
 }
 
-fun main(args: Array<String>) {
-    DefaultText("Hello").run {
+
+fun preDecorated(decorated: Text.() -> Unit): Text.() -> Unit {
+    return {
         background {
             underline {
-                draw()
+                decorated()
             }
         }
     }
 }
+
+fun preDecorated2(decorated: Text.() -> Unit): Text.() -> Unit {
+    return {
+        underline {
+            decorated()
+        }
+    }
+}
+
+fun main(args: Array<String>) {
+    DefaultText("Hello").run(preDecorated { draw() })
+    DefaultText("World").run(preDecorated2 { draw() })
+}
+
