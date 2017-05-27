@@ -5,10 +5,10 @@ public class Decorator {
         void draw();
     }
 
-    public static class DefaultText implements Text {
+    public static class PrintedText implements Text {
         private String text;
 
-        public DefaultText(String text){
+        public PrintedText(String text){
             this.text = text;
         }
         @Override
@@ -17,9 +17,9 @@ public class Decorator {
         }
     }
 
-    public static abstract class TextDecorator implements Text {
+    public static abstract class TextEffect implements Text {
         protected Text decorated;
-        public TextDecorator(Text decorated) {
+        public TextEffect(Text decorated) {
             this.decorated = decorated;
         }
 
@@ -29,7 +29,7 @@ public class Decorator {
         }
     }
 
-    public static class Underline extends TextDecorator {
+    public static class Underline extends TextEffect {
 
         public Underline(Text decorated) {
             super(decorated);
@@ -47,7 +47,7 @@ public class Decorator {
         }
     }
 
-    public static class Background extends TextDecorator {
+    public static class Background extends TextEffect {
 
         public Background(Text decorated) {
             super(decorated);
@@ -70,7 +70,7 @@ public class Decorator {
     }
 
     public static void main(String[] args) {
-        new Background(new Underline(new DefaultText("Hallo"))).draw();
+        new Background(new Underline(new PrintedText("Hallo"))).draw();
     }
 
 }
