@@ -1,3 +1,5 @@
+![pull requests welcome](https://img.shields.io/badge/pull_requests-welcome-green.svg)
+
 Gang of Four patterns in Kotlin.  
 Inspired by https://github.com/mariofusco/from-gof-to-lambda
 
@@ -15,4 +17,3 @@ Inspired by https://github.com/mariofusco/from-gof-to-lambda
 
 Blog post coming soon
 
-**Pull requests welcome!**
