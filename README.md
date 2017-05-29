@@ -14,3 +14,4 @@ Inspired by https://github.com/mariofusco/from-gof-to-lambda
 | Template Method | (top-level) functions |
 
 Blog post coming soon
+**Pull requests welcome!**
