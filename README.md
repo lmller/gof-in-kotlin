@@ -15,5 +15,5 @@ Inspired by https://github.com/mariofusco/from-gof-to-lambda
 | Strategy | functions |
 | Template Method | (top-level) functions |
 
-Blog post coming soon
+Also read the blog post, maybe: https://dev.to/lovis/gang-of-four-patterns-in-kotlin
 
