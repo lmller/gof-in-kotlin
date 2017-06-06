@@ -17,6 +17,6 @@ fun main(args: Array<String>) {
     val regular = Customer("John", 10.0, noDiscount)
 
     println("${student.name} pays %.2f per month".format(student.pricePerMonth()))
-    println("${regular.name} pays %.2f per month".format(student.pricePerMonth()))
+    println("${regular.name} pays %.2f per month".format(regular.pricePerMonth()))
 
 }
