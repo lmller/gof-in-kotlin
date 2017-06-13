@@ -1,7 +1,10 @@
 ![pull requests welcome](https://img.shields.io/badge/pull_requests-welcome-green.svg)
 
-Gang of Four patterns in Kotlin.  
-Inspired by https://github.com/mariofusco/from-gof-to-lambda
+#### Gang of Four patterns in Kotlin.  
+
+Inspired by https://github.com/mariofusco/from-gof-to-lambda  
+
+Blog post: https://dev.to/lovis/gang-of-four-patterns-in-kotlin
 
 | Pattern | Kotlin |
 | --- | --- |
@@ -14,6 +17,4 @@ Inspired by https://github.com/mariofusco/from-gof-to-lambda
 | Singleton | `object` declaration |
 | Strategy | functions |
 | Template Method | (top-level) functions |
-
-Also read the blog post, maybe: https://dev.to/lovis/gang-of-four-patterns-in-kotlin
 
