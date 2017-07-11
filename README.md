@@ -18,3 +18,5 @@ Blog post: https://dev.to/lovis/gang-of-four-patterns-in-kotlin
 | Strategy | functions |
 | Template Method | (top-level) functions |
 
+ℹ️ If you import the project into intelliJ, make sure to **un**check "Create seperate module per source set"!
+
