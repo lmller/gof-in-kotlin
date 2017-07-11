@@ -4,7 +4,7 @@ import java.util.*
 import kotlin.collections.Iterator
 
 class Sentence(val words: List<String>)
-class OtherSentence(val words: List<String>): Collection<String> by words
+class OtherSentence(private val words: List<String>): Collection<String> by words
 
 operator fun Sentence.iterator(): Iterator<String> = words.iterator()
 

@@ -13,7 +13,6 @@ object Dictionary {
     fun getDefinition(word: String): String {
         return definitions[word.toLowerCase()] ?: ""
     }
-
 }
 
 fun main(args: Array<String>) {
@@ -24,12 +23,12 @@ fun main(args: Array<String>) {
     fun1()
 }
 
-internal fun fun1() {
+fun fun1() {
     val word = "kotlin"
-    println(word + " is " + Dictionary.getDefinition(word))
+    println("$word is ${Dictionary.getDefinition(word)}")
 }
 
-internal fun fun2() {
+fun fun2() {
     val word = "kotlin"
     Dictionary.addWord(word, "an awesome programming language created by JetBrains")
 }
