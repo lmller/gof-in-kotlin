@@ -1,6 +1,5 @@
 package lmller.github.io.gofkotlin.observer
 
-import java.util.ArrayList
 import kotlin.properties.Delegates
 
 typealias PropertyChangeListener = (Int) -> Unit
@@ -9,7 +8,8 @@ class Property {
 
     private val listeners = arrayListOf<PropertyChangeListener>()
 
-    var value by Delegates.observable(0) { prop, old, new ->
+    var value by Delegates.observable(0) { _, old, new ->
+        println("The value was: $old")
         listeners.forEach { listener -> listener(new) }
     }
 
@@ -23,4 +23,5 @@ fun main(args: Array<String>) {
     property.registerListener { new -> println("The new value is $new") }
 
     property.value = 1989
+    property.value = 2017
 }
