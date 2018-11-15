@@ -8,6 +8,8 @@ Blog posts:
 - Part 1: https://dev.to/lovis/gang-of-four-patterns-in-kotlin
 - Part 2: https://dev.to/lovis/gang-of-four-patterns-in-kotlin---slight-return
 
+Watch me talk about it: https://youtu.be/xxGCVVtMVn4 (2018 @code.talks hamburg)
+
 | Pattern | Kotlin |
 | --- | --- |
 | Builder   | `apply` function / named constructor parameters |
@@ -22,5 +24,4 @@ Blog posts:
 | Visitor | Pattern Matching / `when` |
 
 ℹ️ If you import the project into intelliJ, make sure to **un**check "Create separate module per source set"!
-
 
